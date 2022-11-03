@@ -380,7 +380,7 @@ class App(QMainWindow):
 #      self.setTheme(self.theme)
 
       # Temporary: load test data an insert in image
-      self.load('/home/wilfried/Projects/Masks/cube.fits')
+      self.load(opath.join(self.scriptDir, 'cube.fits'))
       self.imCanvas.setImage(self.data[0])
 
 
